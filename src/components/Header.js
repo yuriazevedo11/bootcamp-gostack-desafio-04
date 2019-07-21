@@ -1,12 +1,12 @@
 import React from 'react';
 
 const Header = () => (
-  <header>
+  <header id="header">
     <nav>
       <img src="https://i.imgur.com/KDIDiSE.png" />
       <section>
         <span>Meu perfil</span>
-        <i class="fas fa-user-circle"></i>
+        <i className="fas fa-user-circle"></i>
       </section>
     </nav>
   </header>

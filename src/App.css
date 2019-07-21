@@ -31,28 +31,73 @@ body {
   background: #aaa;
 }
 
-header {
-  padding: 0 45px;
+header#header {
+  padding: 0 30px;
   background: #4a90e2;
   color: white;
 }
 
-header nav {
+header#header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
 }
 
-header section {
+header#header nav img {
+  max-width: 160px;
+}
+
+header#header nav section {
   display: flex;
   align-items: center;
 }
 
-header section span {
+header#header nav section span {
   margin-right: 12px;
 }
 
-header section i {
+header#header nav section i {
   font-size: 24px;
+}
+
+main#post-list {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+main#post-list article {
+  padding: 25px;
+  margin: 15px 0;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 1px 1px 7px 1px #cecece;
+}
+
+main#post-list article header {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+main#post-list article header img {
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+main#post-list article header .post-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main#post-list article header .post-info small {
+  color: #adadad;
+}
+
+main#post-list hr {
+  border: none;
+  border-top: 1px solid #f1f1f1;
+  margin: 20px 0px;
 }
