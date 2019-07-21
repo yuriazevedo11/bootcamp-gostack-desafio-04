@@ -1,10 +1,12 @@
 import React from 'react';
 
+import Header from './components/Header'
+
 import './App.css'
 
 const App = () => (
   <>
-    <h1>React Facebook</h1>
+    <Header />
   </>
 );
 
