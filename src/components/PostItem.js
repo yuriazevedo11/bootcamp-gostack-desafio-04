@@ -1,6 +1,8 @@
 import React from 'react';
 
-const components = ({ data }) => (
+import PostComments from './PostComments'
+
+const PostItem = ({ data }) => (
   <article>
     <header>
       <img src={data.author.avatar} alt="img" />
@@ -9,11 +11,14 @@ const components = ({ data }) => (
         <small>{data.date}</small>
       </div>
     </header>
+
     <section>
       <div>{data.content}</div>
     </section>
     <hr/>
+
+    { data.comments.map(comment => <PostComments key={comment.id} data={comment}/>) }
   </article>
 );
 
-export default components;
+export default PostItem;

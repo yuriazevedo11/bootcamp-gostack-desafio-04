@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html, body, #root {
+  height: 100%;
+}
+
 body {
   background: #f2f2f2;
   font: 16px Arial, Helvetica, sans-serif;
@@ -96,8 +100,37 @@ main#post-list article header .post-info small {
   color: #adadad;
 }
 
-main#post-list hr {
+main#post-list article section {
+  text-align: justify;
+  line-height: 24px;
+}
+
+main#post-list article hr {
   border: none;
   border-top: 1px solid #f1f1f1;
   margin: 20px 0px;
+}
+
+main#post-list article .post-comment {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+main#post-list article .post-comment:last-of-type {
+  margin-bottom: 0px;
+}
+
+main#post-list article .post-comment img {
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 12px;
+  margin-top: 5px;
+}
+
+main#post-list article .post-comment section {
+  text-align: justify;
+  background: #eeeeee;
+  padding: 10px 15px;
+  border-radius: 20px;
+  line-height: 24px;
 }
